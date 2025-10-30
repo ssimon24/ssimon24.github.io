@@ -1,0 +1,324 @@
+/*navigation bar tutorial from https://www.w3schools.com/howto/howto_js_topnav.asp used as reference -->*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #393939;
+    overflow: hidden;
+    }     
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: "Cormorant Unicase", serif;
+    }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #768c84;
+    color: azure;
+    }
+
+h1 {
+    color: #768c84;
+    text-decoration: none;
+    font-family: "Beth Ellen", cursive;
+    font-size: 80px;
+    text-align: center;
+    /*text outline tutorial from https://kinsta.com/blog/css-text-outline/ used as reference -->*/ 
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: azure;
+    }
+        
+h2 {
+    font-family: "Cormorant Unicase", serif;
+    text-align: center;
+    font-size: 40px;
+    color:azure;
+    font: bold;
+    }
+        
+h3 {
+    background: #768c84;
+    border: 8px solid #b7b293;
+    border-radius: 7px;
+    color: #b7b293;
+    text-decoration: none;
+    font-family: "Beth Ellen", cursive;
+    font-size: 48px;
+    text-align: center;
+    /*text outline tutorial from https://kinsta.com/blog/css-text-outline/ used as reference -->*/
+    -webkit-text-stroke-width: .1px;
+    -webkit-text-stroke-color: azure;
+    }
+
+h4 {
+    font-family: "Cormorant Unicase", serif;
+    text-align: center;
+    font-size: 40px;
+    color: #b7b293;
+    font: bold;
+    text-decoration: underline;
+    }
+        
+table, th, td {
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+    }
+        
+table {
+    border: 3px double #768c84;
+    margin-left: 5%;
+    margin-right: 5%;
+    }
+th {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    }
+
+td {
+    font-size: 1.5em;
+}
+        
+tr:nth-child(even) {
+    background-color: #768c84
+    }
+        
+body {
+    /*background information*/
+    background-color: #465550;
+    /*font information*/
+    font-family: "Cormorant", serif;
+    font-size: 1.5em;
+    color:azure
+    }
+
+.rauner-img {
+    width: 250px;
+    height: 250px;
+    float: right;
+    margin-right: 30px;
+    border: 5px solid #b7b293;
+    border-radius: 5px
+}
+
+img{
+    max-width: 50vw; 
+    size: auto;
+}
+.sabrina-img {
+    float: right; 
+    padding: 25px;
+}
+
+ul {
+    list-style-type: square;
+    }
+        
+.resume-heading {
+    background-color: #b7b293;
+    left: 50px;
+    width: 80%;
+    margin: auto;
+    color: black;
+    font-family: "Cormorant Unicase", serif;
+    padding: 4px 14px;
+    }
+
+.resume-list {
+    background-color: #b7b293;
+    left: 50px;
+    width: 80%;
+    margin: auto;
+    color: black;
+    font-family: "Cormorant", serif;
+    padding: 4px 14px;
+}
+
+.rauner{
+    background-image: url('rauner.jpeg');
+    background-size: auto;
+    width: 100vw; /* 100% of the viewport width */
+    height: 100vh; /* 100% of the viewport height */
+    object-fit: cover; /* Scales the image to cover the entire container */
+    display: block flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.letter-placement{
+    display: block flex;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*tutorial to align images side by side from 
+ https://www.shecodes.io/athena/15197-how-to-place-three-images-side-by-side-in-css-and-html used as reference, 
+ includes the following two classes*/
+
+.img-container {
+    float: left;
+    width: 33.33%;
+    padding: 8px;  
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: table;
+}  
+
+a.button {
+    border-radius: 20px;
+    background-color: #393939;
+    text-decoration: none;
+    color: azure;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 20px;
+    font-family: "Cormorant Unicase", serif;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    margin: 14px;
+    border: solid 8px;
+}
+
+.button:hover {
+    background-color: #ddd;
+    color: black;
+    }
+
+/* tutorial to make link not appear blue/purple 
+ * from https://stackoverflow.com/questions/10312857/blue-and-purple-default-links-how-to-remove 
+ * used as reference in all home-button related classes*/
+
+a.home-button:link {
+    font-family: "Cormorant Unicase", serif;
+    text-align: center;
+    font-size: 40px;
+    color:azure;
+    font: bold;
+    text-decoration: underline;
+    padding: 14px 16px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    margin: 14px;
+}
+
+a.home-button:hover { 
+    color: #768c84;
+    font-size: 50px;
+    background-color: azure; 
+}
+
+a.home-button:visited { 
+    color:azure; 
+}
+
+a.home-button:focus { 
+    text-decoration: underline; 
+    color:azure; 
+}
+
+a.home-button:hover, a:active { 
+    text-decoration: underline; 
+    color:#768c84 }
+
+a {
+    color: azure;
+}
+
+a:visited {
+    color:azure; 
+}
+
+a:hover, a:active { 
+    text-decoration: underline; 
+    color:#768c84;
+    background: azure;
+}
+
+
+.center-placement {
+    text-align: center;
+}
+
+hr {
+  border: none;
+  border-top: 1px dashed #b7b293;
+}
+
+footer {
+    color: azure;
+    line-height: 50%;
+    border-collapse: collapse;
+}
+
+/*fonts
+
+All fonts from Google Fonts*/
+
+.cormorant-unicase-light {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 300;
+    font-style: normal;
+    }
+
+.cormorant-unicase-regular {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+
+.cormorant-unicase-medium {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 500;
+    font-style: normal;
+    }
+
+.cormorant-unicase-semibold {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 600;
+    font-style: normal;
+    }
+
+.cormorant-unicase-bold {
+    font-family: "Cormorant Unicase", serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+
+.cormorant-light {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.beth-ellen-regular {
+  font-family: "Beth Ellen", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
